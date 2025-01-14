@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "machina";
+    src: url(./assets/NeueMachina-Regular.woff);
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: "machina";
+    overflow-x: hidden;
+}
+
+nav{
+    padding:30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav .menu h5{
+    font-weight:500;
+    margin-bottom: 0 !important;
+}
+
+nav .logo{
+    rotate: 45deg;
+}
+
+nav .menu button{
+    background-color: white;
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-vector img{
+    height: 90%;
+}
+
+.companylogo{
+    height: 50px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.grayscaleImg{
+    opacity: 0.5;
+}
+
+.uniformpadding{
+    padding: 50px 0;
+}
+
+.services h3{
+    background-color: #9AE975;
+}
+
+.mainServices .box1, .box2, .box3, .box4{
+    width: 48%;
+}
+.mainServices img{
+    height: 70%;
+    width: 70%;
+}
