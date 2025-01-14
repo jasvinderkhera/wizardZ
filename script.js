@@ -109,7 +109,6 @@ gsap.from(".mainServices .box3",{
     scrollTrigger:{
         scroll:"body",
         scrub:2,
-        markers:true,
          start: "top 180%"
     }
 })
@@ -122,7 +121,6 @@ gsap.from(".mainServices .box4",{
     scrollTrigger:{
         scroll:"body",
         scrub:2,
-        markers:true,
          start: "top 180%"
     }
 })
