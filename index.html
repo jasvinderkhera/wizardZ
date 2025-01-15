@@ -9,10 +9,10 @@
 </head>
 <body>
     <nav class="container">
-        <h1 class="logoContainer d-flex gap-2 ">
+        <h1 class="logoContainer d-flex gap-2 mb-0 overflow-hidden">
             <img src="https://cdn-icons-png.flaticon.com/512/8369/8369316.png" alt="" class="logo img-fluid" height="20" width="50">
-            <span class="siteName">WizardZ</span></h1>
-        <div class="menu h6">
+            <p class="siteName mb-0">WizardZ</p></h1>
+        <div class="menu h6 d-none d-md-flex align-items-center">
             <h5><a href="#" class="nav-link">About Us</a></h5>
             <h5><a href="#" class="nav-link">Services</a></h5>
             <h5><a href="#" class="nav-link">Use Cases</a></h5>
@@ -20,21 +20,33 @@
             <h5><a href="#" class="nav-link">Blog</a></h5>
             <button>Request a quote</button>
         </div>
+        <div class="mobileMenu d-block d-md-none z-2">
+            <img src="./assets/images/menu.png" alt="" onclick="menu()">
+        </div>
+        <div class="mobileMenuItems">
+            <h5><a href="#" class="nav-link">About Us</a></h5>
+            <h5><a href="#" class="nav-link">Services</a></h5>
+            <h5><a href="#" class="nav-link">Use Cases</a></h5>
+            <h5><a href="#" class="nav-link">Pricing</a></h5>
+            <h5><a href="#" class="nav-link">Blog</a></h5>
+            <button class="btn text-white border border-1 border-white ms-2">Request a quote</button>
+        </div>
+
     </nav>
 
     <section class="container">
-            <div class="row">
+            <div class="row flex-column-reverse flex-md-row">
                 <div class="col-md-5 py-5 pe-5">
                     <h1 class="hero-info display-4 fw-semibold">Navigating the digital landscape for success</h1>
                     <p class="hero-detail py-4">Welcome to our Digital Marketing Hub, where innovation meets strategy to propel your brand forward. We specialize in crafting tailored digital marketing solutions that drive results. From SEO and social media marketing to paid campaigns and content creation, our expert team is dedicated to enhancing your online presence.</p>
                     <button class="ctaBtn btn btn-dark px-4 py-2">Book a consultation</button>
                 </div>
-                <div class="col-md-7 hero-vector ps-5 mt-5">
-                    <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid ms-5 w-100 object-fit-contain">
+                <div class="col-md-7 hero-vector ps-md-5 mt-5">
+                    <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid ms-md-5 w-100 object-fit-contain">
                 </div>
             </div>
     </section>
-    <section class="companies container d-flex justify-content-between gap-5 py-5">
+    <section class="companies container d-flex justify-content-between gap-5 py-5 w-100 overflow-auto">
         <img src="./assets/images/pngimg.com - amazon_PNG28.png" alt="" class="companylogo img-fluid">
         <img src="https://logovectordl.com/wp-content/uploads/2021/11/dribbble-logo-vector.png" alt="" class="companylogo img-fluid grayscaleImg">
         <img src="https://ddmglobal.com/wp-content/uploads/2018/06/hubspot-grey.png" alt="" class="companylogo img-fluid">
@@ -43,27 +55,27 @@
         <img src="./assets/images/zoom.png" alt="" class="companylogo img-fluid btn-close-hover-opacity grayscaleImg">
     </section>
 
-    <section class="services container uniformpadding d-flex gap-5 align-items-center pb-2">
+    <section class="services container uniformpadding d-flex gap-5 flex-column flex-md-row align-items-center pb-2">
         <h3 class="d-inline-block px-3 py-2 fs-1">Services</h3>
-        <p class="w-50">From SEO and social media marketing to paid campaigns and content creation, our expert team is dedicated to enhancing your online presence.</p>
+        <p class="w-100 w-md-50">From SEO and social media marketing to paid campaigns and content creation, our expert team is dedicated to enhancing your online presence.</p>
         
     </section>
 
-    <section class="container uniformpadding">
+    <section class="container uniformpadding overflow-hidden">
         <div class="mainServices row1 d-flex gap-5 mb-5 flex-wrap">
-            <div class="box1 d-flex border border-1 rounded-4 border-black p-5">
+            <div class="box1 d-flex border border-1 rounded-4 border-black p-md-5 p-3">
                 <h2 class="">Search engine optimization</h2>
                 <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid">
             </div>
-            <div class="box2 d-flex border border-1 rounded-4 border-black p-5">
+            <div class="box2 d-flex border border-1 rounded-4 border-black p-md-5 p-3">
                 <h2>Pay per click advertisement</h2>
                 <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid">
             </div>
-            <div class="box3 d-flex border border-1 rounded-4 border-black p-5">
+            <div class="box3 d-flex border border-1 rounded-4 border-black p-md-5 p-3">
                 <h2>Social media marketing</h2>
                 <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid">
             </div>
-            <div class="box4 d-flex border border-1 rounded-4 border-black p-5">
+            <div class="box4 d-flex border border-1 rounded-4 border-black p-md-5 p-3">
                 <h2>Email marketing</h2>
                 <img src="https://img.freepik.com/premium-vector/marketing-illustration_878233-772.jpg?w=826" alt="" class="img-fluid">
             </div>

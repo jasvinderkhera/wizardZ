@@ -22,6 +22,11 @@ tl.from(".logoContainer .logo",{
     rotate:0,
     duration:0.2,
 })
+tl.from(".mobileMenu img",{
+    y:-40,
+    opacity:0,
+    duration:0.2
+})
 tl.from(".hero-info",{
     x:-500,
     opacity:0,
@@ -124,3 +129,15 @@ gsap.from(".mainServices .box4",{
          start: "top 180%"
     }
 })
+
+
+let x = false
+function menu(){
+    if (x == false){
+        let mobileMenu = document.querySelector(".mobileMenuItems").style.display="block"
+        x = true
+    }else{
+        let mobileMenu = document.querySelector(".mobileMenuItems").style.display="none"
+        x = false
+    }
+}
