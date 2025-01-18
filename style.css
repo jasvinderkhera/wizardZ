@@ -66,6 +66,10 @@ nav .menu button{
     object-fit: cover;
 }
 
+.companies{
+    overflow: hidden;
+}
+
 .grayscaleImg{
     opacity: 0.5;
 }
@@ -88,8 +92,15 @@ nav .menu button{
 
 
 @media screen and (max-width:768px) {
+    nav{
+        padding:16px 40px;
+        
+    }
     .mainServices .box1, .box2, .box3, .box4{
         width: 100%;
         margin: 20px;
+    }
+    .companies{
+        overflow-x: scroll;
     }
 }
